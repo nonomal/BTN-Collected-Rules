@@ -4,6 +4,9 @@
 
 ![page-views](https://raw.githubusercontent.com/PBH-BTN/views-counter/refs/heads/master/svg/792975044/badge.svg)
 
+> [!WARNING]
+> 自 11 月以来，全国各省份、城市突发大量吸血客户端，并通过反复重新拨号和软件手段频繁更换 IP 地址。这导致了本规则的质量和精确性有所下降。  
+
 > [!NOTE]
 > 自 2024/08/21 起，大部分规则现在由 BTN 服务器直接生成更新，更新数据仅包含最近 45 天的活跃数据。当超过 45 天 IP 不活动时，将从列表中自动移除。
 
@@ -71,6 +74,7 @@ Sparkle 服务端每隔 1 小时就会自动更新此仓库中的对应规则文
 * `overdownload-ips.txt` - 由 BTN 网络统计的超量下载列表，当单一 IP 地址在 BTN 网络上下载总量超过种子大小的一定比例（目前为 250%）时才会加入此列表
 * `strange_ipv6_block.txt` - 在数据筛选检查过程中发现的一些异常的 IPV6 地址
 * `high-risk-ips.txt` - 符合近期流行的吸血特征且因吸血而被的 IP 地址列表，此列表内的 IP 不受共识机制的最低共认人数的限制
+* `tracker-high-risk-ips.txt` - 通过 Sparkle Tracker 的数据生成的 BTN 规则，借助 Tracker 的力量生成更加准确的规则数据
 
 ## 被移除的规则
 
