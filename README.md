@@ -1,6 +1,6 @@
 # BTN-Collected-Rules
 
-由 BTN 网络统计分析得出的可被安全的加入系统防火墙屏蔽的 IP 地址列表。
+由 BTN 网络统计分析和维护的 BitTorrent 恶意/疑似恶意 IP 地址集合。
 
 ![page-views](https://raw.githubusercontent.com/PBH-BTN/views-counter/refs/heads/master/svg/792975044/badge.svg)
 
@@ -20,7 +20,6 @@
 当然，你也可以配合路由器/网关 ACL 或防火墙规则，直接在网关处掐断这些 IP 的连接。  
 
 如果你已经在使用 qBittorrent, BiglyBT, Deluge 或者 Vuze/Azureus，请优先使用[PeerBanHelper](https://github.com/PBH-BTN/PeerBanHelper)，该工具不但支持本仓库的规则，且带有更多如启发式检测等高级检测手段。且在加入 BTN 的情况下，可向本仓库自动提交贡献数据。  
-
 
 ## 订阅链接
 
@@ -71,6 +70,7 @@ Sparkle 服务端每隔 1 小时就会自动更新此仓库中的对应规则文
 * `overdownload-ips.txt` - 由 BTN 网络统计的超量下载列表，当单一 IP 地址在 BTN 网络上下载总量超过种子大小的一定比例（目前为 250%）时才会加入此列表
 * `strange_ipv6_block.txt` - 在数据筛选检查过程中发现的一些异常的 IPV6 地址
 * `high-risk-ips.txt` - 符合近期流行的吸血特征且因吸血而被的 IP 地址列表，此列表内的 IP 不受共识机制的最低共认人数的限制
+* `tracker-high-risk-ips.txt` - 通过 Sparkle Tracker 的数据生成的 BTN 规则，借助 Tracker 的力量生成更加准确的规则数据
 
 ## 被移除的规则
 
